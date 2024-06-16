@@ -51,7 +51,7 @@
                 }
             }
             return !validationErrors.Any();
-        }
+        }//End IsValidInput
 
         /// <summary>
         /// Get minimum and maximum time slots duration
@@ -69,7 +69,7 @@
                 minimumTimeSlotMin = timeSlotsArrays.ToList().Min(x => x[0]);
                 maxTimeSlotMins = timeSlotsArrays.ToList().Max(x => x[1]);
             }
-        }
+        }//End DetermineMinimumAndMaxTimeSlotDuration
         #endregion
     }
 }
