@@ -26,26 +26,25 @@ new int[][]
 5. If any slots left unbooked then follow the same logic described in step 4.
 
 # Response 
-<--- M E E T I N G  R O O M S  S C H E D U L E R --->
--------------------------------------------------------------------------
+<---- M M E E T I N G  R O O M S  S C H E D U L E R ---->
+#
 All timeslots scheduled. 3 meeting rooms booked
--------------------------------------------------------------------------
 Number of bookings on this room : 3
 Booking Schedule StartMinutes: 1, EndMinutes: 30
 Booking Schedule StartMinutes: 30, EndMinutes: 35
 Booking Schedule StartMinutes: 35, EndMinutes: 40
--------------------------------------------------------------------------
+#
 Number of bookings on this room : 3
 Booking Schedule StartMinutes: 20, EndMinutes: 45
 Booking Schedule StartMinutes: 13, EndMinutes: 20
 Booking Schedule StartMinutes: 1, EndMinutes: 5
--------------------------------------------------------------------------
+#
 Number of bookings on this room : 2
 Booking Schedule StartMinutes: 10, EndMinutes: 15
 Booking Schedule StartMinutes: 15, EndMinutes: 20
--------------------------------------------------------------------------
+#
 Enter any key to exit:
-
+#
 # Solution setup
 1. Solution is implemented using Visual studio 2022 community edition and .net core 8.
 2. Clone the repo to your local. Open the project and build
