@@ -1,8 +1,8 @@
 # Meeting Room Planner
-This is a code sample algorithm for meeting room planner.
+This is a code sample algorithm for meeting room planner. Implemented as a console application.
 
 ## Problem Statement
-If list of intervals are given in array of array format then get minimum number of meeting rooms to schedule all meetings without overlap.
+If list of intervals are given in an array of arrays format then get minimum number of meeting rooms to schedule all meetings without overlap.
 ## Input Test Data Format
 new int[ ][ ]</br>
     {</br>
