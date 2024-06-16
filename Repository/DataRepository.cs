@@ -12,7 +12,7 @@ namespace MeetingRoomPlanner.Repository
         /// Convert time slots array in to timeslot entities and sort them by total duration
         /// </summary>
         /// <param name="timeSlotsArray"></param>
-        /// <returns></returns>
+        /// <returns>Time slots list</returns>
         internal List<TimeSlot> GetTimeSlots(int[][] timeSlotsArray)
         {
             var timeSlots = new List<TimeSlot>();
@@ -27,7 +27,7 @@ namespace MeetingRoomPlanner.Repository
         /// </summary>
         /// <param name="startMinutes"></param>
         /// <param name="endMinutes"></param>
-        /// <returns></returns>
+        /// <returns>Meeting Room</returns>
         internal MeetingRoom CreateMeetingRoomWithDefaultMinutes(int startMinutes, int endMinutes)
         {
             return new MeetingRoom() { AvailableTimeSlots = new List<TimeSlot>() { new TimeSlot(startMinutes, endMinutes) } };

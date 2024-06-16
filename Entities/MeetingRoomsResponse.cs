@@ -27,7 +27,7 @@ namespace MeetingRoomPlanner.Entities
             Console.WriteLine($"All timeslots scheduled. {MeetingRooms.Count} meeting rooms booked");
             MeetingRooms.ForEach(room => room.PrintSchedule());
             Console.WriteLine("-------------------------------------------------------------------------");
-        }
+        }//End PrintSuccessResponse
 
         /// <summary>
         /// Print failed
@@ -37,7 +37,7 @@ namespace MeetingRoomPlanner.Entities
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.WriteLine($"Bookings failed with following errors : {string.Join(',', Errors)}");
             Console.WriteLine("-------------------------------------------------------------------------");
-        }
+        }//End PrintFailureResponse
         #endregion
     }
 }
