@@ -4,7 +4,7 @@ This is a code sample algorithm for meeting room planner.
 ## Problem Statement
 If list of intervals are given in array of array format then get minimum number of meeting rooms to schedule all meetings without overlap.
 ## Input Test Data Format
-new int[][]</br>
+new int[ ][ ]</br>
     {</br>
     &nbsp;&nbsp;  [1,30],  // First meeting timeslot</br>
     &nbsp;&nbsp;  [10,15], // Second meetting timeslot</br>
@@ -16,7 +16,7 @@ new int[][]</br>
     &nbsp;&nbsp;  [35,40],</br>
     &nbsp;&nbsp;  [1,5],</br>
     };</br>
-</br>
+
 ## Response 
 <---- M M E E T I N G  R O O M S  S C H E D U L E R ----></br>
 All timeslots scheduled. 3 meeting rooms booked</br></br>
