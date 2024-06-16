@@ -37,11 +37,11 @@ Booking Schedule StartMinutes: 15, EndMinutes: 20</br>
 Enter any key to exit:</br>
 
 # Solution Approach
-1. Convert array array in to meaningful TimeSlots List.
-2. As there is no directions given how long each meeting room is available for booking, create a room with minimum start time time and maximum end time as avaialble time for booking.
+1. Convert array of array in to meaningful TimeSlots List.
+2. As there is no directions given how long each meeting room is available for booking, create a room with minimum start time across all times slots as start time for room availability. and maximum end time across all time slots as avaialble end time for booking.
 3. Schedule time slots on that room as bookings based on avaialable time slots.
-4. If any of the slots left unbooked then create another room and book rest of the slots.
-5. If any slots left unbooked then follow the same logic described in step 4.
+4. If any of the slots left unbooked then create another room and book rest of the time slots.
+5. If any slots left unbooked again then follow the same logic described in step 4, in othe words call step 4 recursively until all time slots booked.
 
 # Solution setup
 1. Solution is implemented using Visual studio 2022 community edition and .net core 8.
