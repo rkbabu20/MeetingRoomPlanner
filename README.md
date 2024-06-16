@@ -18,7 +18,7 @@ new int[ ][ ]</br>
     };</br>
 
 ## Response 
-<---- M E E T I N G  R O O M S  S C H E D U L E R ----></br>
+<---- M E E T I N G &nbsp; R O O M S &nbsp; S C H E D U L E R ----></br>
 All timeslots scheduled. 3 meeting rooms booked</br></br>
 Number of bookings on this room : 3</br>
 Booking Schedule StartMinutes: 1, EndMinutes: 30</br>
