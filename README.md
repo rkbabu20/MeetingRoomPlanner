@@ -51,4 +51,4 @@ Enter any key to exit:</br>
 ## Solution setup
 1. Solution is implemented using Visual studio 2022 community edition and .net core 8.
 2. Clone the repo to your local. Open the project and build.
-3. No other pre requisites needed.  
+3. No other pre requisites needed except .net core 8.  
