@@ -6,23 +6,12 @@ namespace MeetingRoomPlanner.Entities
     /// </summary>
     internal class MeetingRoom
     {
-        #region constructor
-        /// <summary>
-        /// Meeting room initializer
-        /// </summary>
-        internal MeetingRoom() 
-        {
-            AvailableTimeSlots = new List<TimeSlot>();
-            BookedTimeSlots = new List<TimeSlot>();
-        }
-        #endregion
-
         #region Properties
         /// <summary>Available time slots</summary>
-        internal List<TimeSlot> AvailableTimeSlots { get; set; }
+        internal List<TimeSlot> AvailableTimeSlots { get; set; } = new List<TimeSlot>();
 
         /// <summary>Booked time slots</summary>
-        internal List<TimeSlot> BookedTimeSlots { get; set; }
+        internal List<TimeSlot> BookedTimeSlots { get; set; } = new List<TimeSlot>();
         #endregion
     }
 }

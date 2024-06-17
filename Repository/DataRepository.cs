@@ -30,7 +30,7 @@ namespace MeetingRoomPlanner.Repository
         /// <returns>Meeting Room</returns>
         internal MeetingRoom CreateMeetingRoomWithDefaultMinutes(int startMinutes, int endMinutes)
         {
-            return new MeetingRoom() { AvailableTimeSlots = new List<TimeSlot>() { new TimeSlot(startMinutes, endMinutes) } };
+            return new MeetingRoom() { AvailableTimeSlots = { new TimeSlot(startMinutes, endMinutes) } };
         }
         #endregion
     }

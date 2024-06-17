@@ -19,7 +19,7 @@ namespace MeetingRoomPlanner.Extensions
             return meetingRoom != null
                       && timeSlot != null
                       && meetingRoom.AvailableTimeSlots.Any()
-                      && meetingRoom.GetMatchingAvailableTimeSlot(timeSlot) != null;
+                      && meetingRoom.GetAvailableTimeSlot(timeSlot) != null;
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace MeetingRoomPlanner.Extensions
             if (meetingRoom != null && timeSlot != null)
             {
                 // Get Booked time slot from available timeslots
-                var bookedTimeSlot = meetingRoom.GetMatchingAvailableTimeSlot(timeSlot);
+                var bookedTimeSlot = meetingRoom.GetAvailableTimeSlot(timeSlot);
                 if (bookedTimeSlot != null)
                 {
                     // Remove booked time slot from the meeting room's available timeslot
@@ -96,7 +96,7 @@ namespace MeetingRoomPlanner.Extensions
             }
         }
 
-        private static TimeSlot? GetMatchingAvailableTimeSlot(this MeetingRoom meetingRoom, TimeSlot timeSlotToBook)
+        private static TimeSlot? GetAvailableTimeSlot(this MeetingRoom meetingRoom, TimeSlot timeSlotToBook)
         {
             return meetingRoom.AvailableTimeSlots
                 .Find(availableSlot =>

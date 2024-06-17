@@ -74,10 +74,10 @@ namespace MeetingRoomPlanner.Services
                 // Step 2 : Foreach timeslot to book, check if meeting room can be accomodated 
                 if (meetingRoom.HasAvailableTimeSlot(timeSlot))
                     meetingRoom.ScheduleMeeting(timeSlot); // If yes then schedule the meeting
-                else // If not then add to new list for not booked timeslots
+                else // If not then add to not booked timeslots list to process later on another room
                     timeSlotsNotBooked.Add(timeSlot);
             }
-            // Step 3 : If timeslots booked then add to meetingrooms
+            // Step 3 : If meeting room has bookings then add to return list
             if (meetingRoom.BookedTimeSlots.Any())
                 meetingRooms.Add(meetingRoom);
             if(timeSlotsNotBooked.Any())
